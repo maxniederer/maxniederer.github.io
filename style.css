@@ -99,7 +99,7 @@ footer {
   margin: 0px;
   text-align: center;
   line-height: 60px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .flex-container-footer {
   display: flex;
@@ -140,8 +140,6 @@ a.link {
 }
 a.link:hover {
   color: hsl(197, 64%, 45%);
-  
-  text-shadow: 1px 1px #0003;
 }
 a#button {
   text-shadow: 1px 1px #0008;
