@@ -1,6 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto Mono';
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
 /************/
 /* Main CSS */
@@ -19,7 +21,7 @@ html {
 }
 body {
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: "Alegreya", serif;
   line-height: 1.5;
   color: #555;
   /*cursor:url('http://www.rw-designer.com/cursor-view/21962.png'), url('cute25.cur'), help;*/
@@ -64,6 +66,7 @@ h3 {
 }
 h3 {
   line-height:100%;
+  font-size:200%;
 }
 h1,
 h2,
@@ -176,6 +179,8 @@ img {
   border-radius: 10px;
 }
 img#project-img {
+  border-width: 5px;
+  border-style: outset outset inset inset;
   border-radius: 20px;
   transition: all 0.75s;
 }
@@ -188,7 +193,6 @@ img#project-img:hover {
 /*modals*/
 
 .modal-window {
-
   position: fixed;
   background-color: #0005;
   top: 0;
