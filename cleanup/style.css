@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+/************/
+/* Main CSS */
+/************/
+
+a.button {
+  padding: 10px;
+  margin: 2px;
+  background-color:#192080;
+  text-decoration: none;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Alegreya", serif;
+  font-size: 4vw;
+}
+
+.img-full-width {
+  width: 100%;
+  height: auto;
+}
+
+.row   { border: 2px dotted black; }
+footer { border: 1px solid red;    }
+header { border: 1px solid blue;   }
+
+.project-image {
+  border: 2px dotted yellow;
+}
+
+.project-desc {
+  border: 2px dotted greenyellow;
+  overflow: hidden;
+}
+
+
+
+/*****************/
+/* Accessibility */
+/*****************/
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* default (xs): phones */
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  border: 1px solid green;
+  
+}
+
+/* s: larger phones, portrait-mode tablets: */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+  .txt-s-p {font-size: 3vw;}
+  .txt-s-h2 {font-size: 6vw;}
+}
+
+/* m: landscape-mode tablets */
+@media only screen and (min-width: 768px) {
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  .txt-m-p {font-size: 3vw;}
+  .txt-m-h2 {font-size: 6vw;}
+}
+
+/* l: laptops */
+@media only screen and (min-width: 992px) {
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+
+  .txt-l-p {font-size: 1.5vw;}
+  .txt-l-h2 {font-size: 3vw;}
+}
+
+/* xl: large desktops */
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+
+  .txt-xl-p {font-size: 1.5vw;}
+  .txt-xl-h2 {font-size: 3vw;}
+}
+
+
+
+
+
+
+/* icons */
+
+.fa {
+  color: #192080;
+  font-size: 100px;
+  padding:20px;
+  transition: all 0.5s;
+}
+.fa:hover {
+  color: hsl(197, 64%, 45%);
+}
+
+/*links and buttons*/
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
+
