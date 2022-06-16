@@ -229,7 +229,7 @@ img#project-img:hover {
 
 /*temporary*/
 .spacer {
-  padding: 180px
+  padding: 50px 180px 50px 180px;
 }
 footer {
   padding-bottom: 270px
