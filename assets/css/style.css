@@ -1031,11 +1031,18 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+#contact {
+  height: 90vh;
+  padding-top: 25vh;
+}
+
 .contact .info {
   
   background: #fff;
   width:200px;
   margin:0 auto;
+  padding-top: 15px;
 }
 
 .contact .info i {
