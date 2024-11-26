@@ -1,0 +1,39 @@
+<div class="search-bar-wrapper centered">
+  <div class="search-bar">
+    <div class="search-box">
+      <label for="search-country-name">
+        <span class="sr-only">Search</span>
+        <ion-icon
+          name="search-outline"
+          class="search-icon"
+          aria-hidden="true"
+        ></ion-icon>
+      </label>
+      <input
+        type="search"
+        name="name"
+        id="search-country-name"
+        class="search-field ui-component"
+        placeholder="Search for a country..."
+      />
+    </div>
+    <select
+      name="region"
+      id="region-select"
+      class="ui-component region-select"
+      onchange="updateFilter()"
+    >
+      <option value="" selected disabled hidden>Filter by Region</option>
+      <option value="africa">Africa</option>
+      <option value="americas">Americas</option>
+      <option value="antarctic">Antarctic</option>
+      <option value="asia">Asia</option>
+      <option value="europe">Europe</option>
+      <option value="oceania">Oceania</option>
+    </select>
+  </div>
+</div>
+<ul class="country-list centered" id="country-list"></ul>
+
+<script src="data.js" defer></script>
+<script src="filter.js" defer></script>

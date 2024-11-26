@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where in the World? | Frontend Mentor Challenge</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="theme.js" defer></script>
+    <script src="insert.js" defer></script>
+    <!--<script src="data.js" defer></script>-->
+    <script src="routing.js" defer></script>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="header centered">
+        <h1><a href="/">Where in the world?</a></h1>
+        <button class="btn dark-mode-btn" onclick="toggleTheme()">
+          <ion-icon
+            name="moon-outline"
+            id="dark-mode-icon"
+            class="dark-mode-icon"
+            aria-hidden="true"
+          ></ion-icon>
+          <span id="dark-mode-text">Dark Mode</span>
+        </button>
+      </div>
+    </header>
+    <main id="root"></main>
+    <footer class="footer header-wrapper">
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="inline-link"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/maxniederer"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="inline-link"
+          >Max Niederer</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
